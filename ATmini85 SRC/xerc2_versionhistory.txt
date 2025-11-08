@@ -1,0 +1,36 @@
+XERC 2 Version history
+----------------------
+
+-- = internal
+++ = public
+
+++v1.001
+* Fixed the switched EB and PB pins
+* Factory Reset now blinks _BLINK_VERSION_ as a three digit code, so that we can find out firmware in the "field"
+* _BLINK_VERSION_ = 0
+
+++v1.000
+* First public release
+
+--v0.919
+* Rearrangement of the code and some optimizing
+
+--v0.918
+* fixed the problems caused with the xbox360 remote. This problem was caused by MS using the first bit in the information field as a toggle bit so the remote presses only worked 50% of the time. We now ignore that bit.
+
+--v0.917
+* added control for short single ir disturbance pulses that could cause the xerc to be waiting for a rising pulse when it would never get a rising pulse. This was the cause of the flicker bug in config.
+
+--v0.916
+* adjusted dim led values (slightly brigther clear and slightly brighter dim)
+* push and pop Temp1 in all dim_led operations
+* moved flicker start to after the ir start bit for possible better flicker
+
+--v0.915
+* fixed initial glitch on fader
+* adjusted fader values
+* possible fix of the remote flicker in fader
+
+--v0.914
+* added flicker on remote press when in config
+* adjusted fader valuse
