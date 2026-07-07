@@ -14,5 +14,5 @@ Notes on External accessories
 
 
 
-IR - receiver - TSOP38238
+IR - receiver - TSOP32156
 
